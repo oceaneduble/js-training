@@ -7,6 +7,10 @@
  */
 
 // Your code :
+function id(params) {
+    const argument = 'pouet';   
+}
+return id ;
 
 //* Begin of tests
 const assert = require('assert')
