@@ -17,6 +17,20 @@ const sourceObject = {
 
 // Your code :
 
+function get(key) {
+  if (key == 'num') {
+    return sourceObject.num;
+  } else if (key == 'bool') {
+    return sourceObject.bool;
+  } else if (key == 'str') {
+    return sourceObject.str;
+  } else if (key == 'log') {
+    return sourceObject.log;
+  } else {
+    return undefined;
+  }
+}
+
 //* Begin of tests
 const assert = require('assert')
 
