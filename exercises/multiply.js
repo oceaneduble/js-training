@@ -16,14 +16,14 @@ function multiply(num1, num2) {
     if (num1 > 0) {
         while (i < num1) {
             somme = somme + num2;
-            i++;
+            i += 1;
         }
         return somme;
 
     } else {
         while (i > num1) {
             somme = somme + num2;
-            i--;
+            i -= 1;
         } 
         return - somme;
     } 
