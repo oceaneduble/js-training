@@ -10,17 +10,26 @@
 
 // Your code :
 
-    function multiply(a, b) {
-        let z = 0;
-        if (b < 0) {
-            for (let i = 0; i < -b; i++) z += a;
-            z= -z;
-        } else {
-            for (let i = 0; i < b; i++) z += a;
-        };
-        return z;
+function multiply(num1, num2) {
+  let somme = 0;
+  let i = 0;
+  if (num1 > 0) {
+    while (i < num1) {
+      somme = somme + num2;
+      i += 1;
     }
-   
+    return somme;
+
+  } else {
+    while (i > num1) {
+      somme = somme + num2;
+      i -= 1;
+    }
+    return -somme;
+  }
+
+}
+
 
 //* Begin of tests
 const assert = require('assert')
