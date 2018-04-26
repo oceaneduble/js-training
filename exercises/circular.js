@@ -9,6 +9,13 @@
 
 // Your code :
 
+function Circular(circular) {
+    this.abc = "Hello";
+    this.circular = this;
+  }
+  
+  var foo = new Circular();
+  return (foo.circular.circular.circular.circular.circular.abc);
 //* Begin of tests
 const assert = require('assert')
 
